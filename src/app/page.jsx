@@ -1,9 +1,16 @@
 import React from 'react';
 import '@/styles/homeStyle.css';
+import Navbar01 from '@/components/navbar/Navbar01';
+import Form from '@/components/form/Form';
+import Button from '@/components/form/Button';
+import Footer01 from '@/components/footer/Footer01';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+
 
 function page() {
   return (
     <>
+      <Navbar01 />
       <div class="container-fluid banner">
         <div className="container">
           <div className="row">
@@ -12,7 +19,9 @@ function page() {
                 <h1 className='banner-title my-auto'>Healthy food & nutrition gives you good life.</h1>
                 <p className='banner-desc'>Curabitur quis velit vel eros mollis viverra. Donec vel nibh vel arcu egesv ulputate finibus ac tincidunt massa. Nulla facilisi pellente.</p>
                 <div className="my-1">
-                  <a href="" className='mb-5'> <button className='banner-startbtn border-0'>Get Started</button></a>
+                  <Button className="mx-2" whichBtn={'filled'} btn={{ text: "Get Started" }} />
+
+                  <a href="" className='mb-5'> <button className='filled-button button-animation border-0'>Get Started</button></a>
                 </div>
               </div>
             </div>
@@ -105,7 +114,7 @@ function page() {
             </div>
           </div>
           <div className="row about-us-content">
-            <div className="col-12 col-md-6">
+            <div className="col-12 my-3 my-md-0 col-md-6">
               <div className="about-us-main">
                 <div className="about-us-img w-100 h-100">
                   <img className='img-fluid w-100 h-100' src="/images/about-us-image.jpg" alt="about us img" />
@@ -117,7 +126,7 @@ function page() {
               </div>
             </div>
             <div className="col-12 col-md-6">
-              <div className="p-5">
+              <div className="p-2 my-4 my-md-0 p-md-5">
                 <div className="">
                   <h6 className='about-us text-center text-md-start'>ABOUT US</h6>
                   <h4 className='fw-bold about-us-title'>we provide best weight loss support in town</h4>
@@ -142,7 +151,7 @@ function page() {
                   </div>
                 </div>
                 <div className="my-1">
-                  <a href="" className='mb-5'> <button className='banner-startbtn border-0'>Get Started</button></a>
+                  <a href="" className='mb-5'> <button className='filled-button button-animation border-0'>Get Started</button></a>
                 </div>
               </div>
             </div>
@@ -346,7 +355,7 @@ function page() {
                   dolore mque laudantium, totam rem aperiam eaque ipsa quae.
                 </p>
                 <div className="my-1">
-                  <a href="#"><button className="banner-startbtn border-0">Join Classes</button></a>
+                  <a href="#"><button className="filled-button button-animation border-0">Join Classes</button></a>
                 </div>
                 <ul className='bg-ul-list my-3 d-flex justify-content-start gap-1 gap-md-5 align-items-center flex-wrap'>
                   <li>Modern Class Environment</li>
@@ -362,32 +371,103 @@ function page() {
       </div>
 
       {/* reviews start */}
-      <div className="container-fluid">
-        <div className="container-fluid">
+      <div className="container-fluid review-parent p-0">
+        <div className="container-fluid review-container">
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-6">
                 <div className="">
                   <h6 className='about-us text-center text-md-start'>TESTIMONIALS</h6>
-                  <h2 className='fw-bold fs-2 w-100 text-center service-para text-md-start w-md-50'>See Reviews From Our Clients</h2>
-                  <p className='fw-medium service-desc'>Curabitur vitae elit orci. Nulla blandit lobortis dolor eget faucibus massa maximus vel. Cras a venenatis erat.</p>
+                  <h2 className='fw-bold fs-2 w-100 text-center review-heading text-md-start w-md-50'>See Reviews From Our Clients</h2>
+                  <p className='fw-normal review-desc'>Curabitur vitae elit orci. Nulla blandit lobortis dolor eget faucibus massa maximus vel. Cras a venenatis erat.</p>
                 </div>
               </div>
               <div className="col-12 col-md-6">
-
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12 col-md-4">
-                <div className="">
-                  <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
+                <div className="review-persons-img">
+                  <div className="reviwers-img rounded-circle">
+                    <img className=' w-100 h-100 rounded-circle' src="/images/review-img-1.jpg" alt="review image" />
+                  </div>
+                  <div className="reviwers-img rounded-circle">
+                    <img className=' w-100 h-100 rounded-circle' src="/images/review-img-1.jpg" alt="review image" />
+                  </div>
+                  <div className="reviwers-img rounded-circle">
+                    <img className=' w-100 h-100 rounded-circle' src="/images/review-img-1.jpg" alt="review image" />
+                  </div>
+                  <div className="reviwers-img rounded-circle">
+                    <img className=' w-100 h-100 rounded-circle' src="/images/review-img-1.jpg" alt="review image" />
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className="row mt-3 mt-md-0">
+              <div className="col-12 col-md-4">
+                <div class="card my-2 my-md-5 p-3 border-0 review-card">
+                  <div class="card-body">
+                    <img className='my-2' src="/images/star-img.png" alt="start images" />
+                    <p class="card-text review-card-desc">
+                      Voluptatem asantium dolore mque laudan
+                      totam rem aperiam eaque ipsa quae invent.
+                      Sed ut perspiciatis unde omnis. </p>
+                    <h5 class="card-title review-card-name">Michael S. Puckett</h5>
+                    <span className='review-card-role'>Students</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4">
+                <div class="card  my-2 my-md-5 p-3 border-0 review-card active">
+                  <div class="card-body">
+                    <img className='my-2' src="/images/star-img.png" alt="start images" />
+                    <p class="card-text review-card-desc">
+                      Voluptatem asantium dolore mque laudan
+                      totam rem aperiam eaque ipsa quae invent.
+                      Sed ut perspiciatis unde omnis. </p>
+                    <h5 class="card-title review-card-name">Michael S. Puckett</h5>
+                    <span className='review-card-role'>Students</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-4">
+                <div class="card  my-2 my-md-5 p-3 border-0 review-card">
+                  <div class="card-body">
+                    <img className='my-2' src="/images/star-img.png" alt="start images" />
+                    <p class="card-text review-card-desc">
+                      Voluptatem asantium dolore mque laudan
+                      totam rem aperiam eaque ipsa quae invent.
+                      Sed ut perspiciatis unde omnis. </p>
+                    <h5 class="card-title review-card-name">Michael S. Puckett</h5>
+                    <span className='review-card-role'>Students</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="cinatiner-fluid feedback-container">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-12 col-lg-6">
+                <div className="d-flex mt-5 justify-content-center my-auto align-items-start flex-column">
+                  <h6 className='about-us text-center mx-auto mx-md-start w-100 text-md-start'>GET FREE CONSULTATION</h6>
+                  <h2 className='fw-medium mb-2 fs-2 w-100 text-center review-heading text-md-start w-md-50'>Visit Our Studio to Understand the Difference</h2>
+                  <p className='fw-normal review-desc text-center text-md-start'>Curabitur vitae elit orci. Nulla blandit lobortis dolor, eget faucibus massa maximus vel. Cras a venenatis erat. Aliquam interdum lectus eget fringilla pharetra. Nullam dictum condimentum sagittis.</p>
+                  <div className="container my-5">
+                    <div className="row gap-2">
+                      <div className="col-6 feed-back-border-right">
+                        <img src="/images/feed-back-img-1.png" alt="feed back image" />
+                        <h3 className='feed-back-title fw-normal'>our office location</h3>
+                        <p className='feed-back-para fw-medium'>121 King St, Melbourne VIC 3000, Australia</p>
+                      </div>
+                      <div className="col">
+                        <img src="/images/feed-back-img-2.png" alt="feed back image" />
+                        <h3 className='feed-back-title fw-normal'>our office location</h3>
+                        <p className='feed-back-para fw-medium'>121 King St, Melbourne VIC 3000, Australia</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-12 col-md-12 col-lg-6">
+                <Form />
               </div>
             </div>
           </div>
@@ -396,6 +476,10 @@ function page() {
       {/* reviews end */}
 
       {/* weight loss end */}
+
+      {/* footer start */}
+      <Footer01 />
+      {/* footer end */}
     </>
   )
 }

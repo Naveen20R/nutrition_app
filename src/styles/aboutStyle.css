@@ -1,0 +1,212 @@
+.process-imgs-2 {
+    width: 300px;
+    height: 450px;
+    border-radius: 0 40px 0 40px;
+    overflow: hidden;
+    /* border:2px solid red; */
+}
+
+.process-imgs-container-2>div:last-child {
+    margin-top: 80px;
+}
+
+.about-us {
+    color: var(--e-global-color-d5fc2a3);
+}
+
+.about-us-title {
+    font-size: var(--e-global-typography-secondary-font-size);
+    line-height: var(--e-global-typography-secondary-line-height);
+    color: var(--e-global-color-secondary);
+}
+
+.about-us-para {
+    padding: 0 0 20px;
+    color: var(--e-global-color-text);
+    font-family: var(--e-global-typography-text-font-family), Sans-serif;
+    font-size: var(--e-global-typography-text-font-size);
+    font-weight: var(--e-global-typography-text-font-weight);
+    text-transform: var(--e-global-typography-text-text-transform);
+    line-height: var(--e-global-typography-text-line-height);
+}
+
+@media(max-width:600px) {
+    .process-imgs-container-2>div:last-child {
+        margin-top: 0px;
+    }
+
+    .elementor-heading-title,
+    .about-us-title {
+        font-size: 30px;
+    }
+}
+
+/* about bg img style */
+
+.bg-img {
+    background-image: url("/images/about-bg-img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+
+.about-bg-title {
+    font-size: 40px;
+    color: var(--e-global-color-secondary);
+}
+
+.about-bg-para {
+    color: var(--e-global-color-text);
+    font-size: 16px;
+}
+
+.bg-content {
+    background-color: white;
+    border-radius: 0px 30px 0px 30px;
+}
+
+.bar-title {
+    color: var(--e-global-color-secondary);
+
+}
+
+/* Skill Bar Styles */
+.skill-bar {
+    background-color: gray;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.skill-track {
+    background-color: green;
+    height: 100%;
+    border-radius: 5px;
+    width: 70%;
+    position: absolute;
+    left: 0;
+    transition: width 2s;
+}
+
+.bar-pointer {
+    width: 20px;
+    height: 20px;
+    border: 1px solid green;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    left: 70%;
+    transform: translateX(-50%);
+    transition: left 2s;
+    background-color: white;
+    box-shadow: -1.216px 6.894px 15px 0 rgba(0, 0, 0, .07), inset 0 2px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.pointer-dot {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+@keyframes movePointer {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 80%;
+    }
+}
+
+.bar-pointer {
+    animation: movePointer 2s forwards;
+}
+
+.skill-track {
+    animation: fillBar 2s forwards;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+
+/* our goal style */
+.goal-img {
+    border-radius: 0 80px 0 80px;
+    width: 90%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.our-plane-card {
+    border-radius: 0px 30px 0px 30px;
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, .06);
+    padding: 30px;
+}
+
+@media(min-width:992px) {
+    .our-plane-card.active {
+        padding: 50px 30px;
+    }
+}
+
+.about-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.about-list li {
+    margin: 10px 0px;
+}
+
+.about-list li::before {
+    /* content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/public//images//about-right-arrow.png');
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); */
+
+    content: url('/images//about-right-arrow.png');
+    /* position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%); */
+    width: 20px;
+    padding:0px 10px 0px 0px;
+    height: 20px;
+}
+
+/* ::before {
+    content: url('/images/correct-img.png');
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+} */

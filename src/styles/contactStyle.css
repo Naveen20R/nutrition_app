@@ -1,0 +1,64 @@
+.bg-blue {
+    background-color: var(--e-global-color-23f359f);
+}
+
+.contact-call-text {
+    color: var(--e-global-color-secondary);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact-call-address {
+    font-weight: 600;
+    color: var(--e-global-color-secondary);
+    font-size: 20px;
+}
+
+.contact-icon-img {
+    width: 35px;
+    height: 33px;
+}
+
+
+/* bg image start */
+.bg-img {
+    background-image: url("/images/bg-img-3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.bg-img-heading {
+    font-size: var(--e-global-typography-secondary-font-size);
+    line-height: var(--e-global-typography-secondary-line-height);
+    color: var(--e-global-color-primary);
+}
+
+.bg-img-para {
+    text-align: center;
+    color: var(--e-global-color-primary);
+    font-size: 16px;
+    padding-bottom: 17px;
+}
+
+.bg-img-content {
+    max-width: 700px;
+}
+
+.lead {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .bg-img {
+        padding: 60px 0;
+    }
+}
+
+@media(max-width:600px) {
+    .bg-img-content {
+        max-width:100%;
+    }
+}

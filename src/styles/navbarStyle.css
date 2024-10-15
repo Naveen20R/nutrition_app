@@ -1,0 +1,95 @@
+/* navbarStyle.css */
+
+.main-navbar {
+    position: sticky;
+    top: 0px !important;
+    z-index: 1000;
+}
+
+.navbar-head {
+    background-color: rgb(27, 27, 0.1);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link span {
+    font-size: small;
+}
+
+.navbar-nav .nav-item {
+    padding: 0px 10px;
+}
+
+/* Dropdown styles */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    /* Show the dropdown on hover */
+}
+
+.dropdown-menu {
+    display: none;
+    /* Hide dropdown by default */
+    position: absolute;
+    background-color: rgb(27, 27, 27);
+    min-width: 160px;
+    /* Adjust as needed */
+    z-index: 1000;
+}
+
+.dropdown-item {
+    color: black;
+    /* Change dropdown item color */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Change background on hover */
+}
+
+.navbar-drops {
+    background-color: white;
+    border-top: 3px solid var(--e-global-color-29f9df0);
+}
+
+.navbar-drops a {
+    color: black;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.682);
+}
+
+/* Responsive navbar styles */
+@media (max-width: 767px) {
+    .navbar-nav .nav-item {
+        padding: 5px 0;
+        /* Adjust padding for small screens */
+    }
+
+    .navbar-toggler {
+        border: none;
+        /* Optional: remove border from the toggle button */
+    }
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+/* Ensuring logo is visible */
+.logo {
+    max-width: 100%;
+    /* Ensure logo fits in the navbar */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.navbar-info {
+    color: white;
+    border-bottom: 1px solid var(--e-global-color-29f9df0);
+}
+
+.header-info-links {
+    list-style-type: none;
+    margin: 0px;
+    /* display: flex; */
+}
